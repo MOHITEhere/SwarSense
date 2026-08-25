@@ -34,36 +34,6 @@
 
 ## 🏗️ System Architecture
 
-                   ┌─────────────────────────┐
-                   │  Input Options          │
-                   │  (Record / Upload / Text)
-                   └────────────┬────────────┘
-                                │
-                                ▼
-                   ┌─────────────────────────┐
-                   │  OpenAI Whisper (ASR)   │
-                   │  & Language Detection   │
-                   └────────────┬────────────┘
-                                │
-                     [Transcribed Text]
-                                │
-        ┌───────────────────────┼───────────────────────┐
-        ▼                       ▼                       ▼
-┌───────────────────────┐ ┌───────────────────┐ ┌───────────────────────┐
-│ GoogleTranslator      │ │ BERT Multilingual │ │ gTTS Audio Generation │
-│ (Target Language)     │ │ Sentiment Model   │ │ (.mp3 output)         │
-└───────────┬───────────┘ └─────────┬─────────┘ └───────────┬───────────┘
-│                       │                       │
-└───────────────────────┼───────────────────────┘
-│
-▼
-┌─────────────────────────┐
-│   Streamlit Web UI      │
-└─────────────────────────┘
-
-
----
-
 ## 🛠️ Tech Stack & Models
 
 | Component | Library / Framework | Description |
