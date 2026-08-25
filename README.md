@@ -54,10 +54,6 @@
 SwarSense/
 ├── app.py                   # Main Streamlit application logic
 ├── requirements.txt         # Project dependencies
-├── README.md                # Project documentation
-└── screenshots/             # Interface and output screenshots
-    ├── input.png
-    └── output.png
 
 
 ⚙️ Configuration & Performance
